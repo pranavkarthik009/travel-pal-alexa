@@ -8,36 +8,19 @@
           "slots": [
             {
               "name": "destination",
-              "type": "AMAZON.SearchQuery",
-              "samples": [
-                "{destination}",
-                "a trip to {destination}"
-              ]
+              "type": "AMAZON.City"
             },
             {
               "name": "days",
-              "type": "AMAZON.NUMBER",
-              "samples": [
-                "for {days} days",
-                "{days} days"
-              ]
+              "type": "AMAZON.NUMBER"
             },
             {
               "name": "interest",
-              "type": "TravelInterest",
-              "samples": [
-                "focused on {interest}",
-                "with {interest}",
-                "I like {interest}"
-              ]
+              "type": "TravelInterest"
             },
             {
               "name": "month",
-              "type": "AMAZON.Month",
-              "samples": [
-                "in {month}",
-                "during {month}"
-              ]
+              "type": "AMAZON.Month"
             }
           ],
           "samples": [
