@@ -37,6 +37,48 @@
           "samples": []
         },
         {
+          "name": "FlightSearchIntent",
+          "slots": [
+            {
+              "name": "origin",
+              "type": "AMAZON.City"
+            },
+            {
+              "name": "flightDestination",
+              "type": "AMAZON.City"
+            },
+            {
+              "name": "travelDate",
+              "type": "AMAZON.DATE"
+            }
+          ],
+          "samples": [
+            "find flights from {origin} to {flightDestination}",
+            "find flights from {origin} to {flightDestination} {travelDate}",
+            "what are the best flights from {origin} to {flightDestination}",
+            "what are the best flights from {origin} to {flightDestination} {travelDate}"
+          ]
+        },
+        {
+          "name": "ReservationIntent",
+          "slots": [
+            {
+              "name": "restaurantCity",
+              "type": "AMAZON.City"
+            },
+            {
+              "name": "reservationDate",
+              "type": "AMAZON.DATE"
+            }
+          ],
+          "samples": [
+            "book a restaurant in {restaurantCity}",
+            "book reservations in {restaurantCity}",
+            "book a restaurant in {restaurantCity} {reservationDate}",
+            "find restaurants in {restaurantCity}"
+          ]
+        },
+        {
           "name": "AMAZON.CancelIntent",
           "samples": []
         },
