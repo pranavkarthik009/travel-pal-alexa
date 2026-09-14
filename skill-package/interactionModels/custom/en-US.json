@@ -1,0 +1,79 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "travel pal",
+      "intents": [
+        {
+          "name": "PlanTripIntent",
+          "slots": [
+            {
+              "name": "destination",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{destination}",
+                "a trip to {destination}"
+              ]
+            },
+            {
+              "name": "days",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "for {days} days",
+                "{days} days"
+              ]
+            },
+            {
+              "name": "interest",
+              "type": "TravelInterest",
+              "samples": [
+                "focused on {interest}",
+                "with {interest}",
+                "I like {interest}"
+              ]
+            },
+            {
+              "name": "month",
+              "type": "AMAZON.Month",
+              "samples": [
+                "in {month}",
+                "during {month}"
+              ]
+            }
+          ],
+          "samples": [
+            "plan a trip to {destination}",
+            "plan a {days} day trip to {destination}",
+            "plan a trip to {destination} for {days} days",
+            "plan a trip to {destination} focused on {interest}",
+            "plan a trip to {destination} for {days} days in {month}",
+            "help me plan my vacation"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "name": "TravelInterest",
+          "values": [
+            { "name": { "value": "food" } },
+            { "name": { "value": "history" } },
+            { "name": { "value": "nature" } },
+            { "name": { "value": "shopping" } },
+            { "name": { "value": "mixed" } }
+          ]
+        }
+      ]
+    }
+  }
+}
