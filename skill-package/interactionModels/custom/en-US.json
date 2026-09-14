@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "travel pal",
+      "invocationName": "travel agent",
       "intents": [
         {
           "name": "PlanTripIntent",
